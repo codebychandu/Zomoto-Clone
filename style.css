@@ -26,22 +26,13 @@ body{
     border-radius: 6px;
     border: none;
     font-weight: 600;
-    /* animation-name: example;
-    animation-duration: infinite; */
+   
 }
 
 .nav_item:hover{
     cursor: pointer;
     background-image: linear-gradient(to left, #dd2476 0%, #ff512f 50%, #dd2476 100%);
-    /* animation-name: example;
-    @keyframes example {
-        0%   {background-color: red;}
-        25%  {background-color: yellow;}
-        50%  {background-color: blue;}
-        100% {background-color: green;}
-      } */
-    
-    
+   
 }
 
 @media (min-width:768px) {
