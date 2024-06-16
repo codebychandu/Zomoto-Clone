@@ -5,13 +5,18 @@
 }
 body{
     font-family: "Merriweather", serif;
-    background: #f9fafc;
+    background: #ebf2ff;
+}
+#pizza_card{
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: white;
+    height: 75px;
 }
 .navbar_brand{
     width: 100px;
@@ -26,23 +31,110 @@ body{
     border-radius: 6px;
     border: none;
     font-weight: 600;
-   
+    font-size: larger;
 }
 
 .nav_item:hover{
     cursor: pointer;
-    background-image: linear-gradient(to left, #dd2476 0%, #ff512f 50%, #dd2476 100%);
+    background-image: linear-gradient(
+        to left,
+        #dd2476 0%,
+        #ff512f 50%,
+        #dd2476 100%
+    );
    
 }
+.containor{
+    max-width: 100%;
+    padding:20px;
+    margin: 0px auto;
+}
+.hero_image_containor{
+    width: 100%;
 
+}
+.hero_image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 25%);
+}
+
+.hero_text{
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+}
+.Explore_menu_text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #1d3557;
+    font-weight: 800;
+}
+.food_card{
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.food_card_image_containor{
+    width: 100%;
+    
+}
+.food_image{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.food_card_description{
+    padding: 15px;
+}
 @media (min-width:768px) {
+    .Explore_menu_lists{
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+        padding: 0px 30px;
+    }
+    .Explore_menu_containor{
+        position: relative;
+    }
+    .Explore_menu_gradiant_bg{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 50%,
+            #ff512f 100%
+        );
+        transform: skewY(-5deg);
+    }
+
     .navbar{
         justify-content: space-between;
         padding: 10px 30px;
     }
+    .hero_containor{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 
 @media (min-width:1024px){
+    .Explore_menu_lists{
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+    }
+    .Explore_menu_text{
+        font-size: 40px;
+    }
     .navbar{
         padding: 10px 50px;
     }
@@ -54,4 +146,15 @@ body{
         padding: 20px;
         font-size: 20px;
     }
+    .containor{
+        max-width: 70%;
+    }
+    .hero_description{
+        width: 100%;
+    }
+    .hero_text{
+        font-size: 48px;
+        /* margin: 20px 0px; */
+    }
+    
 }
